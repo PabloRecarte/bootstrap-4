@@ -19,5 +19,10 @@
   "homepage": "https://github.com/PabloRecarte/bootstrap-4#readme",
   "devDependencies": {
     "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.0",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1"
   }
 }
