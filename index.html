@@ -8,6 +8,8 @@
     <!-- Bootstrap CSS -->
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+
     <title>Hello, world!</title>
   </head>
   <body>
@@ -39,6 +41,7 @@
           <li class="breadcrumb-item active" aria-current="page">Home</li>
         </ol>
       </nav>
+
       <div class="d-flex flex-wrap">
         <div class="col-sm-4">
           <h2>Ubicación:</h2>
@@ -62,7 +65,7 @@
             <p>Mirando la ciudad.</p>
           </div>
           <div>
-            <button class="btn btn-primary btn-reserva">Reservar</button>
+            <button class="btn btn-primary btn-reserva"><span class="oi oi-plus footer-address-icon"></span>Reservar</button>
           </div>
         </div>
         <div class="card-hotel d-flex flex-column justify-content-between">
@@ -141,9 +144,10 @@
         </div>
         <div class="col-sm-4">
           <address>
-            18 de Julio 123, Montevideo, Uruguay
-            +598 99 123 456
-            contacto@guiahoteles.com
+            <h3>Oficina central</h3>
+            <p><span class="oi oi-home footer-address-icon"></span>18 de Julio 123, Montevideo, Uruguay</p>
+            <p><span class="oi oi-phone footer-address-icon"></span>+598 99 123 456</p>
+            <p><span class="oi oi-inbox footer-address-icon"></span>contacto@guiahoteles.com</p>
           </address>
         </div>
         <div class="col-sm-4">
