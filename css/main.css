@@ -11,14 +11,14 @@ footer {
 }
 
 .card-hotel {
-    flex: 1 150px;
-    /* propiedad flew grow */
-    padding: 2px 5px 2px 5px;
+    flex: 1 200px;
     margin-top: 10px;
+    margin-left: 2px;
 }
 
 .btn-reserva {
     width: 100%;
+    border-radius: 0px;
 }
 
 .footer-address-icon {
