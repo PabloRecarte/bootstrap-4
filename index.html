@@ -42,16 +42,28 @@
         </ol>
       </nav>
 
-      <div class="d-flex flex-wrap">
+      <div class="row">
         <div class="col-sm-4">
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#ubicacion" aria-expanded="false" aria-controls="collapse1">Ubicación</button>
+        </div>
+        <div class="col-sm-4">
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#precios" aria-expanded="false" aria-controls="collapse2">Precios</button>
+        </div>
+        <div class="col-sm-4">
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#confort" aria-expanded="false" aria-controls="collapse3">Confort</button>
+        </div>
+      </div>
+
+      <div class="d-flex flex-wrap">
+        <div class="col-sm-4 collapse multi-collapse" id="ubicacion">
           <h2>Ubicación:</h2>
           <p>La mejor del condado</p>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4 collapse multi-collapse" id="precios">
           <h2>Precios:</h2>
           <p>Los más accesibles.</p>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4 collapse multi-collapse" id="confort">
           <h2>Comfort:</h2>
           <p>El mejor.</p>
         </div>
