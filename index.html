@@ -204,7 +204,7 @@
             <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas cuentan con clases de tango gratis">Hotel Melo</h5>
             <h6 class="card-subtitle text-muted">Cerro Largo</h6>
             <p class="card-text">En el medio de Cerro Largo.</p>
-            <button class="btn btn-outline-success btn-reserva" data-toggle="modal" data-target="#contacto">Contacto</button>
+            <button class="btn btn-outline-success btn-reserva" data-toggle="modal" data-target="#contacto" id="contactomelo">Contacto</button>
           </div>
           <div>
             <button class="btn btn-primary btn-reserva"><span class="oi oi-plus footer-address-icon"></span>Reservar</button>
@@ -282,6 +282,24 @@
       })
       $('.carousel').carousel({
         interval: 2000
+      })
+      $('#contacto').on('show.bs.modal', function(e){
+        console.log('el modal se esta mostrando');
+        $('#contactomelo').removeClass("btn-outline-success");
+        $('#contactomelo').addClass("btn-primary");
+        $('#contactomelo').prop('disabled', true);
+      })
+      $('#contacto').on('shown.bs.modal', function(e){
+        console.log('el modal se mostro');
+      })
+      $('#contacto').on('hide.bs.modal', function(e){
+        console.log('el modal se oculta');
+        $('#contactomelo').removeClass("btn-primary");
+        $('#contactomelo').addClass("btn-outline-success");
+        $('#contactomelo').prop('disabled', false);
+      })
+      $('#contacto').on('hidden.bs.modal', function(e){
+        console.log('el modal se oculto');
       })
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
