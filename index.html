@@ -41,60 +41,71 @@
           <li class="breadcrumb-item active" aria-current="page">Home</li>
         </ol>
       </nav>
-
+      
       <div class="row">
-        <div class="col-sm-4">
-          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#ubicacion" aria-expanded="false" aria-controls="collapse1">Ubicación</button>
+        <div class="col-sm-6">
+          <div class="row">
+            <div class="col-sm-4">
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#ubicacion" aria-expanded="false" aria-controls="collapse1">Ubicación</button>
+            </div>
+            <div class="col-sm-4">
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#precios" aria-expanded="false" aria-controls="collapse2">Precios</button>
+            </div>
+            <div class="col-sm-4">
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#confort" aria-expanded="false" aria-controls="collapse3">Confort</button>
+            </div>
+          </div>
+
+          <div class="d-flex flex-wrap">
+            <div class="col-sm-4 collapse multi-collapse" id="ubicacion">
+              <h2>Ubicación:</h2>
+              <p>La mejor del condado</p>
+            </div>
+            <div class="col-sm-4 collapse multi-collapse" id="precios">
+              <h2>Precios:</h2>
+              <p>Los más accesibles.</p>
+            </div>
+            <div class="col-sm-4 collapse multi-collapse" id="confort">
+              <h2>Comfort:</h2>
+              <p>El mejor.</p>
+            </div>
+          </div>
         </div>
-        <div class="col-sm-4">
-          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#precios" aria-expanded="false" aria-controls="collapse2">Precios</button>
-        </div>
-        <div class="col-sm-4">
-          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#confort" aria-expanded="false" aria-controls="collapse3">Confort</button>
+        <div class="col-sm-6">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="./images/hoteles/pde.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./images/hoteles/cerro.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./images/hoteles/carrasco.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./images/playa.jpg" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+          </div>
         </div>
       </div>
 
-      <div class="d-flex flex-wrap">
-        <div class="col-sm-4 collapse multi-collapse" id="ubicacion">
-          <h2>Ubicación:</h2>
-          <p>La mejor del condado</p>
-        </div>
-        <div class="col-sm-4 collapse multi-collapse" id="precios">
-          <h2>Precios:</h2>
-          <p>Los más accesibles.</p>
-        </div>
-        <div class="col-sm-4 collapse multi-collapse" id="confort">
-          <h2>Comfort:</h2>
-          <p>El mejor.</p>
-        </div>
-      </div>
+      
 
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="./images/hoteles/pde.jpg" alt="First slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="./images/hoteles/cerro.jpg" alt="Second slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="./images/hoteles/carrasco.jpg" alt="Third slide">
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        </a>
-      </div>
-
-      <img src="./images/playa.jpg" class="img-fluid" alt="Responsive img">
+      <!-- <img src="./images/playa.jpg" class="img-fluid" alt="Responsive img"> -->
 
 <!-- masonry opcional -->
 <!-- hace interferencia con flex -->
@@ -105,10 +116,11 @@
             Descuento ahora
           </div>
           <div class="card-body">
-            <h5 class="card-title">Hotel Cerro</h5>
+            <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas cuentan con clases de tango gratis">Hotel Cerro</h5>
             <h6 class="card-subtitle text-muted">Cerro</h6>
             <img class="card-img-top" src="./images/hoteles/cerro.jpg" alt="hotel img">
             <p class="card-text">Mirando la ciudad.</p>
+            <button class="btn btn-outline-success btn-reserva" data-toggle="modal" data-target="#contacto">Contacto</button>
           </div>
           <div>
             <button class="btn btn-primary btn-reserva"><span class="oi oi-plus footer-address-icon"></span>Reservar</button>
@@ -120,6 +132,7 @@
             <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas cuentan con clases de tango gratis">Hotel Carrasco</h5>
             <h6 class="card-subtitle text-muted">Carrasco</h6>
             <p class="card-text">High Zone.</p>
+            <button class="btn btn-outline-success btn-reserva" data-toggle="modal" data-target="#contacto">Contacto</button>
           </div>
           <div>
             <button class="btn btn-primary btn-reserva"><span class="oi oi-plus footer-address-icon"></span>Reservar</button>
@@ -128,9 +141,10 @@
         <div class="card card-hotel d-flex flex-column justify-content-between">
           <img class="card-img-top" src="./images/hoteles/centro.jpg" alt="hotel img">
           <div class="card-body">
-            <h5 class="card-title">Hotel Centro</h5>
+            <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas cuentan con clases de tango gratis">Hotel Centro</h5>
             <h6 class="card-subtitle text-muted">Centro</h6>
             <p class="card-text">En el medio de la ciudad.</p>
+            <button class="btn btn-outline-success btn-reserva" data-toggle="modal" data-target="#contacto">Contacto</button>
           </div>
           <div>
             <button class="btn btn-primary btn-reserva"><span class="oi oi-plus footer-address-icon"></span>Reservar</button>
@@ -139,9 +153,10 @@
         <div class="card card-hotel d-flex flex-column justify-content-between">
           <img class="card-img-top" src="./images/hoteles/pde.jpg" alt="hotel img">
           <div class="card-body">
-            <h5 class="card-title">Hotel PdE</h5>
+            <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas cuentan con clases de tango gratis">Hotel PdE</h5>
             <h6 class="card-subtitle text-muted">Maldonado</h6>
             <p class="card-text">Punta del Este.</p>
+            <button class="btn btn-outline-success btn-reserva" data-toggle="modal" data-target="#contacto">Contacto</button>
           </div>
           <div>
             <button class="btn btn-primary btn-reserva"><span class="oi oi-plus footer-address-icon"></span>Reservar</button>
@@ -150,9 +165,10 @@
         <div class="card card-hotel d-flex flex-column justify-content-between">
           <img class="card-img-top" src="./images/hoteles/bellaunion.jpg" alt="hotel img">
           <div class="card-body">
-            <h5 class="card-title">Hotel Bella Union</h5>
+            <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas cuentan con clases de tango gratis">Hotel Bella Union</h5>
             <h6 class="card-subtitle text-muted">Artigas</h6>
             <p class="card-text">En las regiones del norte del pais.</p>
+            <button class="btn btn-outline-success btn-reserva" data-toggle="modal" data-target="#contacto">Contacto</button>
           </div>
           <div>
             <button class="btn btn-primary btn-reserva"><span class="oi oi-plus footer-address-icon"></span>Reservar</button>
@@ -161,9 +177,10 @@
         <div class="card card-hotel d-flex flex-column justify-content-between">
           <img class="card-img-top" src="./images/hoteles/quebrada.jpg" alt="hotel img">
           <div class="card-body">
-            <h5 class="card-title">Hotel Quebrada</h5>
+            <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas cuentan con clases de tango gratis">Hotel Quebrada</h5>
             <h6 class="card-subtitle text-muted">Treinta y Tres</h6>
             <p class="card-text">Disfruta la Quebrada de los Cuervos como nunca antes.</p>
+            <button class="btn btn-outline-success btn-reserva" data-toggle="modal" data-target="#contacto">Contacto</button>
           </div>
           <div>
             <button class="btn btn-primary btn-reserva"><span class="oi oi-plus footer-address-icon"></span>Reservar</button>
@@ -172,9 +189,10 @@
         <div class="card card-hotel d-flex flex-column justify-content-between">
           <img class="card-img-top" src="./images/hoteles/colonia.jpg" alt="hotel img">
           <div class="card-body">
-            <h5 class="card-title">Hotel Sacramento</h5>
+            <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas cuentan con clases de tango gratis">Hotel Sacramento</h5>
             <h6 class="card-subtitle text-muted">Colonia</h6>
             <p class="card-text">La antigua ciudad mas presente que nunca.</p>
+            <button class="btn btn-outline-success btn-reserva" data-toggle="modal" data-target="#contacto">Contacto</button>
           </div>
           <div>
             <button class="btn btn-primary btn-reserva" data-container="body" data-toggle="popover" data-placement="right" title="Consulta las promociones vigentes"><span class="oi oi-plus footer-address-icon"></span>Reservar</button>
@@ -183,7 +201,7 @@
         <div class="card card-hotel d-flex flex-column justify-content-between">
           <img class="card-img-top" src="./images/hoteles/melo.jpg" alt="hotel img">
           <div class="card-body">
-            <h5 class="card-title">Hotel Melo</h5>
+            <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas cuentan con clases de tango gratis">Hotel Melo</h5>
             <h6 class="card-subtitle text-muted">Cerro Largo</h6>
             <p class="card-text">En el medio de Cerro Largo.</p>
             <button class="btn btn-outline-success btn-reserva" data-toggle="modal" data-target="#contacto">Contacto</button>
