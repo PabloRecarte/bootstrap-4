@@ -25,10 +25,22 @@
   "homepage": "https://github.com/PabloRecarte/bootstrap-4#readme",
   "devDependencies": {
     "copyfiles": "^2.4.1",
+    "grunt": "^1.4.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^4.0.0",
+    "grunt-contrib-sass": "^2.0.0",
+    "grunt-contrib-uglify": "^5.0.1",
+    "grunt-filerev": "^2.3.1",
+    "grunt-usemin": "^3.1.1",
+    "jit-grunt": "^0.10.0",
     "lite-server": "^2.6.1",
     "node-sass": "^6.0.1",
     "onchange": "^7.1.0",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "time-grunt": "^2.0.0"
   },
   "dependencies": {
     "bootstrap": "^5.1.0",
